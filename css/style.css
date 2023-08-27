@@ -52,7 +52,16 @@ font-style: italic;
 }
 .divider >section:last-of-type{
     border-bottom: none ; /* used to remove the border from the last section element of work and progject section */ 
- }
+}
+
+img{
+    width:300px;
+    height:250px;
+    border-radius: 20px;
+    border-color: black;
+    border-width:1px;
+    border-style:solid;;
+}
 
  
  /* -------------Profile--------------------- */
@@ -77,11 +86,6 @@ font-style: italic;
 
 .proj-item h3{
     margin-top: 0;
-}
-
-.project_style img{
-    width:300px;
-    height:250px;
 }
 p> a {
     color: #222E50;
@@ -133,7 +137,7 @@ p> a {
     width: 100%;
     background-image: url(../images/educationBackgroud.jpg);
     background-size:cover;
-    background-position: top right;
+    background-position:top;
     padding:100px;
 }
 
