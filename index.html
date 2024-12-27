@@ -6,130 +6,221 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Sparsh Soni - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <main>
-      <!-- ***********************  ABOUT / PROFILE  *********************** -->
-      <header class="profile">
-        <div class="wrap_style">
-          <h1>SPARSH SONI</h1>
-          <h2>Full-Stack Developer</h2>
-          <p>I specialize in full-stack development with expertise in React, Redux, and Node.js. Currently maintaining a CodeForces rating of 1045 and solved over 340 problems on LeetCode.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">SS</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
         </div>
-      </header>
+      </div>
+    </nav>
 
-      <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-      <section class="project_style">
-        <div class="wrap_style divider">
-          <h2>Featured Projects</h2>
-          <p>View selected projects below. More information can be found at <a href="http://www.linkedin.com/in/SparshSoni">my LinkedIn</a>.</p>
+    <!-- Hero Section -->
+    <header class="hero" id="about">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>SPARSH SONI</h1>
+            <h2>Full-Stack Developer</h2>
+            <p class="hero-description">Building digital experiences with modern technologies. CodeForces rated 1045 | 340+ LeetCode problems solved.</p>
+            <div class="hero-cta">
+              <a href="#contact" class="primary-btn">Get in Touch</a>
+              <a href="#projects" class="secondary-btn">View Work</a>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">340+</span>
+              <span class="stat-label">LeetCode Problems</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">1045</span>
+              <span class="stat-label">CodeForces Rating</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">8.54</span>
+              <span class="stat-label">GPA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-          <!-- Project 1 -->
-          <section class="proj-item">
-            <img src="images/sample.png" alt="AI Invoice Manager">
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/sample.png" alt="AI Invoice Manager">
+            </div>
             <div class="project-content">
               <h3>AI Powered Invoice Manager</h3>
-              <p>A comprehensive invoice management system built with React, Redux, and Google Gemini. Achieved 70% reduction in manual data entry time and 90% accuracy in structured data generation.</p>
-              <a href="https://github.com/PacemakerX/ai-invoice-manager" target="_blank">View Project</a>
+              <p>React • Redux • Google Gemini</p>
+              <ul class="project-highlights">
+                <li>70% reduction in manual data entry time</li>
+                <li>90% accuracy in data generation</li>
+                <li>Automated invoice processing system</li>
+              </ul>
+              <div class="project-links">
+                <a href="swipe-invoice-manager.onrender.com/" class="project-btn">Live Demo</a>
+                <a href="https://github.com/PacemakerX/swipe-invoice-manager" class="project-btn">GitHub</a>
+              </div>
             </div>
-          </section>
+          </article>
 
-          <!-- Project 2 -->
-          <section class="proj-item">
-            <img src="images/optimized_routes.jpg" alt="Vehicle Routing Optimization">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/optimized_routes.jpg" alt="Vehicle Routing">
+            </div>
             <div class="project-content">
               <h3>Vehicle Routing Optimization</h3>
-              <p>Engineered a genetic algorithm solution using DEAP library, achieving 15% reduction in travel distance and 20% increase in delivery efficiency. Applied insights from maze-solving applications to streamline logistics operations.</p>
-              <a href="https://github.com/PacemakerX/vehicle-routing" target="_blank">View Project</a>
+              <p>Python • DEAP • Matplotlib</p>
+              <ul class="project-highlights">
+                <li>15% reduction in travel distance</li>
+                <li>20% increase in delivery efficiency</li>
+                <li>Custom genetic algorithm implementation</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/PacemakerX/Genetic-Algorithm-for-VRP" class="project-btn">View Project</a>
+                <a href="https://github.com/PacemakerX/Genetic-Algorithm-for-VRP" class="project-btn">GitHub</a>
+              </div>
             </div>
-          </section>
+          </article>
 
-          <!-- Project 3 -->
-          <section class="proj-item">
-            <img src="images/resturantMenuProject.png" alt="Royal Dhaba Website">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/resturantMenuProject.png" alt="Royal Dhaba">
+            </div>
             <div class="project-content">
               <h3>Royal Dhaba Website</h3>
-              <p>Developed a responsive restaurant website using Vanilla CSS, leading to 40% increase in customer inquiries and 25% increase in mobile traffic.</p>
-              <a href="https://pacemakerx.github.io/RoyalDhaba/" target="_blank">View Live Site</a>
+              <p>HTML • CSS • JavaScript</p>
+              <ul class="project-highlights">
+                <li>40% increase in customer inquiries</li>
+                <li>25% increase in mobile traffic</li>
+                <li>Responsive design implementation</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://pacemakerx.github.io/RoyalDhaba/" class="project-btn">Live Site</a>
+                <a href="https://github.com/PacemakerX/RoyalDhaba" class="project-btn">GitHub</a>
+              </div>
             </div>
-          </section>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ***********************  WORK EXPERIENCE  *********************** -->
-      <section class="work_experience">
-        <div class="wrap_style item_details divider">
-          <h2>Work Experience</h2>
-          <p>See my complete work history on <a href="http://www.linkedin.com/in/SparshSoni">LinkedIn</a>.</p>
-
-          <!-- Job 1 -->
-          <section class="job-item">
-            <div class="job-details">
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
               <h3>Open Source Contributor</h3>
-              <p>GirlScript Summer of Code</p>
-              <p>May 2024-July 2024</p>
+              <p class="timeline-subtitle">GirlScript Summer of Code | May 2024-July 2024</p>
+              <ul class="timeline-details">
+                <li>Improved project stability by 15%</li>
+                <li>Enhanced code quality by 25%</li>
+                <li>Led code reviews and debugging sessions</li>
+              </ul>
             </div>
-            <div class="job-summary">
-              <p>Contributed to open source projects, improving project stability by 15% and enhancing code quality by 25% through active participation in code reviews and debugging sessions. Collaborated with diverse teams using Git and GitHub for version control.</p>
-            </div>
-          </section>
+          </div>
 
-          <!-- Job 2 -->
-          <section class="job-item">
-            <div class="job-details">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
               <h3>Senior Core Member</h3>
-              <p>IEEE - Computer Society</p>
-              <p>July 2023 – November 2024</p>
+              <p class="timeline-subtitle">IEEE - Computer Society | July 2023 – November 2024</p>
+              <ul class="timeline-details">
+                <li>Led ARCS 2023 and 2024 events (400+ attendees)</li>
+                <li>Managed 13-member team</li>
+                <li>Improved team productivity by 40%</li>
+              </ul>
             </div>
-            <div class="job-summary">
-              <p>Led ARCS 2023 and 2024 events with 400+ attendees, managed a team of 13 members, and improved team productivity by 40%. Organized weekly meetings and conducted post-event surveys for continuous improvement.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>B.Tech in Computer Science</h3>
+              <p class="timeline-subtitle">VIT Vellore | 2022-2026 | GPA: 8.54</p>
+              <ul class="timeline-details">
+                <li>Data Structures and Algorithms</li>
+                <li>Database Management Systems</li>
+                <li>Computer Networks</li>
+              </ul>
             </div>
-          </section>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-      <section class="education">
-        <div class="wrap_style item_details">
-          <h2>Education</h2>
-  
-          <section>
-            <h3>Vellore Institute of Technology Vellore, Tamil Nadu</h3>
-            <p>Bachelor of Technology in Computer Science and Engineering</p>
-            <p>2022-2026 (anticipated) | GPA: 8.54</p>
-            <p>Relevant Coursework: Data Structures and Algorithms, Database Management Systems, Computer Networks, Object-Oriented Programming</p>
-          </section>
-  
-          <section>
-            <h3>City Montessori School</h3>
-            <p>Intermediate Education - Percentage 91.2%</p>
-            <p>Completed 2021</p>
-          </section>
-
-          <h2>Technical Skills</h2>
-          <section class="certificate">
-            <p><strong>Languages:</strong> Python, Java, C, C++, HTML/CSS, JavaScript, Bash</p>
-            <p><strong>Technologies/Frameworks:</strong> Linux, React, GitHub, DEAP, Jupyter Notebook, Matplotlib, NumPy, Redux, Google Gemini</p>
-            <p><strong>Developer Tools:</strong> VS Code, Eclipse, Amazon Web Services, Android Studio</p>
-            <p><strong>Achievements:</strong> CodeForces Rating: 1045 | LeetCode: 340+ problems solved</p>
-          </section>
-        </div>  
-      </section>
-
-      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-      <footer class="social">
-        <div class="wrap_style">
-          <h2>Let's Keep in Touch!</h2>
-          <ul class="contact-list"> 
-            <li><a href="mailto:sparsh.officialwork@gmail.com">Email</a></li>
-            <li><a href="https://github.com/PacemakerX" target="_blank">GitHub</a></li>
-            <li><a href="http://www.linkedin.com/in/SparshSoni" target="_blank">LinkedIn</a></li>
-          </ul>
+    <!-- Skills Section -->
+    <section class="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">Bash</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Technologies</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Redux</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">DEAP</span>
+              <span class="skill-tag">AWS</span>
+            </div>
+          </div>
         </div>
-      </footer>
-    </main>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <a href="mailto:sparsh.officialwork@gmail.com" class="contact-item">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">sparsh.officialwork@gmail.com</span>
+            </a>
+            <a href="https://github.com/PacemakerX" class="contact-item" target="_blank">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">@PacemakerX</span>
+            </a>
+            <a href="http://www.linkedin.com/in/sparshsoni" class="contact-item" target="_blank">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">@SparshSoni</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
